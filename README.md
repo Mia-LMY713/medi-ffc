@@ -1,4 +1,4 @@
-# FDENet: Frequency-Domain Enhanced Network for Low-Dose CT Image Denoising
+# A Frequency-Domain Enhanced Network for Low-Dose CT Image Denoising
 
 A deep learning method for low-dose CT (LDCT) image denoising based on transform-domain algorithms. FDENet integrates **Fast Fourier Convolution (FFC)** for global frequency-domain feature extraction, **Deformable Convolution v2** for local adaptive feature extraction, and a multi-branch skip-connection fusion strategy to effectively suppress CT noise while preserving structural details.
 
