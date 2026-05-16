@@ -14,6 +14,14 @@ FDENet consists of the following key modules:
 
 The network follows a residual learning strategy: the output is `y - f(y)`, where `f(y)` predicts the noise component.
 
+### Overall Architecture
+
+![Overall Architecture](Experiment%20Results/Overall%20Architecture.png)
+
+### Robust Deformed Network Architecture
+
+![Robust Deformed Network Architecture](Experiment%20Results/Robust%20Deformed%20Network%20Architecture.png)
+
 ## Dataset
 
 Experiments use the **2016 NIH-AAPM-Mayo Clinic Low-Dose CT** dataset:
@@ -25,6 +33,10 @@ Experiments use the **2016 NIH-AAPM-Mayo Clinic Low-Dose CT** dataset:
 - **Simulation**: Quarter-dose LDCT simulated by adding Poisson noise to normal-dose projections
 - **Training set**: 9 patients, 450 image pairs (3mm slices)
 - **Test set**: 100 image pairs (randomly selected)
+
+### Dataset Samples
+
+![Mayo Clinic Low-Dose CT Dataset](Experiment%20Results/Mayo%20Clinic%20Low%20Dose%20CT%20Dataset.png)
 
 ## Experimental Settings
 
@@ -56,6 +68,18 @@ Quantitative comparison on the Mayo LDCT dataset (3mm slices):
 | **FDENet (Ours)** | **33.8115** | 0.9184 | 0.0587 |
 
 FDENet achieves the **highest PSNR** among all compared methods while maintaining competitive SSIM and GMSD scores.
+
+### Visual Comparison
+
+![Denoising Results](Experiment%20Results/Denoising%20Results.png)
+
+### Local Detail Comparison
+
+![Local Denoising Results](Experiment%20Results/Local%20Denoising%20Results.png)
+
+### ROI Zoom-in Comparison
+
+![ROI Denoising Results](Experiment%20Results/ROI%20denoising%20results.png)
 
 ## Project Structure
 
